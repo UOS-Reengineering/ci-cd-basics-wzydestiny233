@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test (JDK11,macos-latest):
+  build-and-test (11,macos-latest):
 
     runs-on: macos-latest
 
@@ -20,7 +20,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package
 
-  build-and-test (JDK11,ubuntu-latest):
+  build-and-test (11,ubuntu-latest):
 
     runs-on: ubuntu-latest
 
@@ -35,7 +35,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package
 
-  build-and-test (JDK17,macos-latest):
+  build-and-test (17,macos-latest):
 
     runs-on: macos-latest
 
@@ -50,7 +50,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package
 
-  build-and-test (JDK17,ubuntu-latest):
+  build-and-test (17,ubuntu-latest):
 
     runs-on: ubuntu-latest
 
