@@ -22,7 +22,7 @@ jobs:
 
   build-and-test (JDK11,ubuntu-latest):
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
